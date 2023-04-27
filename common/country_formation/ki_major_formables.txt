@@ -1,0 +1,35 @@
+﻿PAG = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_patriagrande
+	leadership_play = dp_leadership_patriagrande
+
+	required_states_fraction = 0.50
+	
+	ai_will_do = { has_technology_researched = pan-nationalism }
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:caribeno
+			country_has_primary_culture = cu:central_american
+                  country_has_primary_culture = cu:mexican
+                  country_has_primary_culture = cu:north_andean
+                  country_has_primary_culture = cu:south_andean
+                  country_has_primary_culture = cu:platinean									
+		}
+		any_country = { #caribeno central_american mexican north_andean south_andean platinean
+			OR = {
+			      country_has_primary_culture = cu:caribeno
+			      country_has_primary_culture = cu:central_american
+                        country_has_primary_culture = cu:mexican
+                        country_has_primary_culture = cu:north_andean
+                        country_has_primary_culture = cu:south_andean
+                        country_has_primary_culture = cu:platinean
+			}
+			has_technology_researched = pan-nationalism
+		}
+	}
+}
+

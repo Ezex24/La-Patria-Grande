@@ -1,0 +1,88 @@
+﻿je_mexican_patriagrande_unification = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		AND = {
+			OR = {
+                  country_has_primary_culture = cu:mexican
+			}
+			OR = {
+				NOT = { exists = c:PAG }
+				c:PAG = THIS
+			}
+		}
+	}
+
+	possible = {
+		OR = {
+			AND = {
+				country_rank >= rank_value:major_power
+				has_technology_researched = pan-nationalism
+				is_subject = no
+			}
+			exists = c:PAG
+		}			
+	}
+
+	complete = {
+		hidden_trigger = {
+			has_variable = je_unification_progress
+		}
+		calc_true_if = {
+			amount > 21
+			owns_entire_state_region = STATE_YUCATAN
+			owns_entire_state_region = STATE_CHIAPAS
+			owns_entire_state_region = STATE_GUATEMALA
+			owns_entire_state_region = STATE_PANAMA
+			owns_entire_state_region = STATE_SAN_SALVADOR
+			owns_entire_state_region = STATE_HONDURAS
+			owns_entire_state_region = STATE_NICARAGUA
+			owns_entire_state_region = STATE_COSTA_RICA
+			owns_entire_state_region = STATE_JALISCO
+			owns_entire_state_region = STATE_ZACATECAS
+			owns_entire_state_region = STATE_GUERRERO
+			owns_entire_state_region = STATE_MEXICO
+			owns_entire_state_region = STATE_CHIHUAHUA
+			owns_entire_state_region = STATE_DURANGO
+			owns_entire_state_region = STATE_RIO_GRANDE
+			owns_entire_state_region = STATE_SONORA
+			owns_entire_state_region = STATE_VERACRUZ
+			owns_entire_state_region = STATE_SINALOA
+			owns_entire_state_region = STATE_BAJIO
+			owns_entire_state_region = STATE_OAXACA
+			owns_entire_state_region = STATE_BAJA_CALIFORNIA
+			owns_entire_state_region = STATE_TEXAS
+			owns_entire_state_region = STATE_CALIFORNIA
+			owns_entire_state_region = STATE_NEVADA
+
+		}
+
+
+	on_monthly_pulse = {
+		events = {
+			italian_unification.2 # confederation
+			italian_unification.3 # Garibaldi
+		}
+		effect = {
+			if = { 
+				limit = { NOT = { has_variable = je_unification_progress } } 
+				set_variable = je_unification_progress
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = italian_unification.1 }
+		remove_variable = je_unification_progress
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_italian_status
+			}
+		}
+	}
+
+	weight = 100
+}

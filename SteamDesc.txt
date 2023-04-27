@@ -1,0 +1,11 @@
+✠IMPERIAL MOD PARADOX EMPIRE✠
+
+A Total Conversion mod geared towards a balanced multiplayer experience, minor economy and QoL fixes, and Military balance, specifically made for use by the Paradox Empire discord server
+
+Mods used:
+
+-VFM (Victorian Flavor Mod): https://steamcommunity.com/sharedfiles/filedetails/?id=2880089689&searchtext=victorian+flavor+mod
+
+-Transfer Cash: https://steamcommunity.com/sharedfiles/filedetails/?id=2881548032
+
+-State Transfer Tool UI: https://steamcommunity.com/sharedfiles/filedetails/?id=2934869952
