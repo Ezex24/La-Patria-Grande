@@ -29,6 +29,8 @@
                         country_has_primary_culture = cu:platinean
 			}
 			has_technology_researched = pan-nationalism
+		AND = {
+			country_rank >= rank_value:major_power
 		}
 	}
 }

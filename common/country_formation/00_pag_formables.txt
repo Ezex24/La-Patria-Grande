@@ -1,0 +1,26 @@
+PUS = { #Provincias Unidas del Sud
+	states = {
+		STATE_BUENOS_AIRES
+		STATE_URUGUAY
+		STATE_SANTA_FE
+		STATE_CORRIENTES
+		STATE_BAJO_PARAGUAY
+		STATE_CHACO
+		STATE_JUJUY
+		STATE_TUCUMAN
+		STATE_ANTOFAGASTA
+		STATE_SANTIAGO
+		STATE_RIO_NEGRO
+		STATE_LA_PAMPA
+		STATE_LOS_RIOS
+		STATE_LA_PAZ
+		STATE_POTOSI
+		STATE_SANTA_CRUZ
+
+	}
+	is_major_formation = no
+
+	required_states_fraction = 0.60	
+	
+	ai_will_do = { always = yes }
+	}

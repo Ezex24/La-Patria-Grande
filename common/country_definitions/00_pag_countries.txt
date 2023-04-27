@@ -1,0 +1,12 @@
+PUS = { #Provincias Unidas del Sud
+    color = { 165 255 255}
+
+    country_type = recognized
+
+    tier = kingdom
+
+    cultures = { platinean south_andean }
+
+    capital = STATE_BUENOS_AIRES
+
+    }
